@@ -1,0 +1,119 @@
+
+
+:root {
+    --primary-color:#0a192f;
+    --secondary-color: #f9f9f9;
+    --accent-color: #4CAF50;
+    --font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: var(--font-family);
+}
+
+/* Navigation */
+header {
+    background:white;
+    padding: 15px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #64ffda;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #64ffda;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.nav a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color:lightgreen;
+}
+
+.skills {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: whitesmoke;
+}
+
+.skills-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.skill-level {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    height: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.skill-level:hover {
+    background-color: #3e8e41;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills {
+        margin: 20px auto;
+        padding: 10px;
+    }
+}
+
+
